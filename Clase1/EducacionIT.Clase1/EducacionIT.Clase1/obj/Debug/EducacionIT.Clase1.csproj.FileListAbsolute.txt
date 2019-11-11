@@ -1,0 +1,7 @@
+C:\Users\EducaciónIT\source\repos\EducacionIT.Clase1\EducacionIT.Clase1\bin\Debug\EducacionIT.Clase1.exe.config
+C:\Users\EducaciónIT\source\repos\EducacionIT.Clase1\EducacionIT.Clase1\bin\Debug\EducacionIT.Clase1.exe
+C:\Users\EducaciónIT\source\repos\EducacionIT.Clase1\EducacionIT.Clase1\bin\Debug\EducacionIT.Clase1.pdb
+C:\Users\EducaciónIT\source\repos\EducacionIT.Clase1\EducacionIT.Clase1\obj\Debug\EducacionIT.Clase1.csprojAssemblyReference.cache
+C:\Users\EducaciónIT\source\repos\EducacionIT.Clase1\EducacionIT.Clase1\obj\Debug\EducacionIT.Clase1.csproj.CoreCompileInputs.cache
+C:\Users\EducaciónIT\source\repos\EducacionIT.Clase1\EducacionIT.Clase1\obj\Debug\EducacionIT.Clase1.exe
+C:\Users\EducaciónIT\source\repos\EducacionIT.Clase1\EducacionIT.Clase1\obj\Debug\EducacionIT.Clase1.pdb
