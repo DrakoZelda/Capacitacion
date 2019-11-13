@@ -1,0 +1,30 @@
+﻿@{
+    Layout = null;
+}
+
+@{ 
+    List<string> nombres = new List<string>();
+
+    nombres.Add("Juan");
+    nombres.Add("jhin");
+    nombres.Add("Belen");
+    nombres.Add("Fleur");
+    nombres.Add("Tonks");
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <ul>
+         @foreach (string nombre in nombres)
+         {
+             <li>@nombre</li>
+         }
+    </ul>
+</body>
+</html>
