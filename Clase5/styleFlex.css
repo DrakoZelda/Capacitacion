@@ -1,0 +1,44 @@
+/*
+  FLEXBOX : es una caja que puede ordenar su contenido a traves de reglas de flex.
+
+  padre
+    display : flex;
+    flex-direction : row | column | row-reverse | column-reverse
+    justify-content : flex-start | flex-end | center | space-around | space-between | space-evenly*(no es standard)
+    align-content :
+    align-items : flex-start | flex-end | center | stretch (seria lo mismo q justify-content, solo q vertical)
+    flex-wrap : nowrap(default) |
+    flex-flow : <direction> <wrap>
+
+    flex-flow : column wrap;
+
+  hijo
+    order :
+    align-self :
+    justify-self :
+    flex-grow :
+    flex-shrink :
+    flex-basis : el ancho inicial de la caja
+
+    flex : <grow> <shrink> <basis>
+*/
+
+#padre {
+  border-width: 3px;
+  border-color: red;
+  border-style: dashed;
+  height:100px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hijo {
+  border: 3px dashed grey;
+  width: 500px;
+}
+
+.hijo:nth-child(3){
+  order: -1;
+}

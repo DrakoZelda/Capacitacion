@@ -1,0 +1,59 @@
+/*
+  selector : la manera en la cual nos referimos a una etiqueta
+
+  cuerpo : todo lo que sigue al selector y esta entre llaves
+
+  reglas : todos los estilos/formatos que queremos cambiarle al selector y estan adentro del cuerpo separadas por punto y coma(;)
+
+  tagname : simplemente el nombre de la etiqueta
+
+  #id : agarra una etiqueta por su id.
+  .class: agarra una etiqueta por su class.
+  *: selector universal
+  selector:nth-child(n) :
+
+  sintaxis:
+    selector {
+      regla: valor;
+  }
+
+*/
+
+h1 {
+  color:red;
+  background-color:blue;
+  display:block;
+}
+
+#primer {
+  color:yellow;
+}
+
+.impar {
+  font-size:25px;
+}
+
+/*
+  display : la manera en la que una etiqueta va a interactuar con el flujo natural de HTML
+
+  etiquetas tradicionales
+
+  block - inline- none - flex
+
+/*
+  Estructura de cajas
+
+  contenido: width - height
+  relleno : padding
+  limit: border
+  margen: margin
+
+  box-sizing: es la regla que determina como va a estar contabilizada la geometria total de la caja,
+  es decir, si el el padding y border suman al tamaño total; o restan del mismo.
+
+  margin : n => n es todos los laterales
+  margin : n m => n es top/bottom | m es right/left
+  margin : w x y z = > w es top | x es right | y es bottom | z es left
+
+
+*/
