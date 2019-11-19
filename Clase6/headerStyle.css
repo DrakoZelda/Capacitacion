@@ -1,0 +1,37 @@
+*{
+  margin:0;
+}
+
+.fondo-rosa {
+  background-color: #e36c6a;
+}
+
+header {
+  height: 70px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 16px;
+  box-shadow: 0 4px 10px black;
+}
+
+header, a {
+  color: white;
+}
+
+.grande{
+
+}
+
+.chiquita{
+
+}
+
+a {
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+/*
+  box-shadow: dX dY (deltas) [blur spread color inset]
+*/
