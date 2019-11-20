@@ -1,0 +1,17 @@
+#sarasa {
+  color:red;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width:200px;
+  height:250px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+  border-radius: 3px;
+  padding: 0 6px;
+  margin: 8px;
+}
