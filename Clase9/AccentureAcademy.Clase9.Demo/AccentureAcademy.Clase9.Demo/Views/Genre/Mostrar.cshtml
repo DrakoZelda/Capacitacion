@@ -1,0 +1,26 @@
+﻿@model List<AccentureAcademy.Clase9.Demo.Models.Genre>
+@using AccentureAcademy.Clase9.Demo.Models
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Mostrar</title>
+</head>
+<body>
+    <div>
+        <h1>Los generos son:</h1>
+        <ul>
+            @foreach (Genre genero in this.Model)
+            {
+                <li>@genero.Title</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
