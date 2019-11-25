@@ -1,0 +1,51 @@
+﻿@model IEnumerable<AccentureAcademy.MovieApp.Models.Movie>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Listar</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <header class="jumbotron text-center">
+        <h1>Listado de Peliculas</h1>
+    </header>
+    <main class="container">
+        <div class="text-right">
+            @Html.ActionLink("Agregar", "Agregar", null,
+                new { @class = "glyphicon glyphicon-plus"})
+        </div>
+        <table class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Fecha de Estreno</th>
+                    <th>Duración</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var movie in this.Model)
+                {
+                    <tr>
+                        <td>@movie.Title</td>
+                        <td>@movie.ReleaseDate.ToShortDateString()</td>
+                        <td>@movie.RunningTime</td>
+                        <td>@Html.ActionLink(" ", "Editar", new { Id = movie.Id},
+                                new { @class = "glyphicon glyphicon-pencil"})</td>
+                        <td>@Html.ActionLink(" ", "Eliminar", new { Id = movie.Id },
+                                new { @class = "glyphicon glyphicon-trash"})</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
