@@ -1,0 +1,47 @@
+﻿@model AccentureAcademy.Clase11.DataBaseFirst.Models.Cancion
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Editar</title>
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</head>
+<body>
+    <header class="jumbotron">
+        <h1>Editar Cancion</h1>
+    </header>
+    <main>
+        @using (Html.BeginForm())
+        {
+            @Html.LabelFor(m => m.Titulo)
+            @Html.EditorFor(m => m.Titulo)
+            <div class="text-right" style="color:red">
+                @Html.ValidationMessageFor(m => m.Titulo)
+            </div>
+
+            @Html.LabelFor(m => m.Compositor)
+            @Html.EditorFor(m => m.Compositor)
+            <div class="text-right" style="color:red">
+                @Html.ValidationMessageFor(m => m.Compositor)
+            </div>
+
+            @Html.LabelFor(m => m.SegundosDuracion)
+            @Html.EditorFor(m => m.SegundosDuracion)
+            <div class="text-right" style="color:red">
+                @Html.ValidationMessageFor(m => m.SegundosDuracion)
+            </div>
+
+            <button class="btn btn-primary form-control">Enviar</button>
+        }
+    </main>
+</body>
+</html>

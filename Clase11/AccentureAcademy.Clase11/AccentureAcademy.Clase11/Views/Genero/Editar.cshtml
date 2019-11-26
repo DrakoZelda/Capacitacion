@@ -1,0 +1,43 @@
+﻿@model AccentureAcademy.Clase11.Models.Genero
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Editar</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="jumbotron">
+        <h1>Editar Genero</h1>
+    </header>
+
+    <main>
+        @using (Html.BeginForm())
+        {
+            @Html.LabelFor(m => m.Nombre)
+            @Html.EditorFor(m => m.Nombre)
+            <div class="text-right" style="color:red">
+                @Html.ValidationMessageFor(m => m.Nombre)
+            </div>
+            <button class="btn btn-primary">Actualizar</button>
+        }
+    </main>
+
+
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+        ${ document }.ready(function () {
+            $("input").addClass("form-control")
+        })
+    </script>
+</body>
+</html>
