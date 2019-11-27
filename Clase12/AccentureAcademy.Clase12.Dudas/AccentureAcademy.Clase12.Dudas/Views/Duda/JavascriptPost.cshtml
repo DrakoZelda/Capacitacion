@@ -1,0 +1,15 @@
+﻿@model AccentureAcademy.Clase12.Dudas.Models.Genero
+
+@{
+    ViewBag.Title = "JavascriptPost";
+}
+
+<h2>JavascriptPost</h2>
+
+@Html.BeginForm()
+{
+    Nombre:@Html.EditorFor(m => m.Nombre);
+    <button type="button">Enviar</button>
+}
+
+    <script src="~/Scripts/Custom/Main.js"></script>

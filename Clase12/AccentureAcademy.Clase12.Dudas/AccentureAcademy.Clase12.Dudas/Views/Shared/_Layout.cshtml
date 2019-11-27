@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Demo Clase 12</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Custom/myStyles.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+
+</head>
+<body>
+    <header class="jumbotron">
+        @if(this.ViewBag.TituloGeneral != null)
+        {
+            <h1>@this.ViewBag.TituloGeneral</h1>
+        }
+        else
+        {
+            <h1>Pagina Principal Clase 12</h1>
+        }
+    </header>
+    <nav>
+        <ul class="navbar">
+            <li class="navbar-nav"><a href="#">Home</a></li>
+            <li class="navbar-nav"><a href="#">About</a></li>
+            <li class="navbar-nav"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        AccentureAccademy &copy; 2019. Todos los derechos reservados.
+    </footer>
+</body>
+</html>

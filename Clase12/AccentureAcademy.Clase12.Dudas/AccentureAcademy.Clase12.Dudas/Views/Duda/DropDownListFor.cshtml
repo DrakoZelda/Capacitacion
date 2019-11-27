@@ -1,0 +1,15 @@
+﻿@model IEnumerable<String>
+
+@{
+    ViewBag.Title = "Como se usa el DropDownListFor?";
+}
+
+<h2>DropDownListFor</h2>
+
+@using (Html.BeginForm())
+{
+
+    @Html.DropDownListFor(this.Model, new SelectList(this.Model))
+
+}
+
