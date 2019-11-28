@@ -1,0 +1,42 @@
+﻿@using AccentureAcademy.Clase13.Dudas.Models
+@model Book
+
+@{
+    ViewBag.Title = "Agregar";
+}
+
+<h2>Agregar</h2>
+
+@{ 
+    //Opciones para hacer llegar la lista de autores
+    //1. Crear una clase del modelo que envuelva al libro y tenga todos los datos
+    //2. Crear un DataContext en este archivo con Razor
+    //3. Pasarle la lista de autores en el BiewBag
+    //4. Hacer un control especializado que sea un selector de autores
+}
+
+@{ 
+    AccentureAcademyBookStoreEntities db = new AccentureAcademyBookStoreEntities();
+}
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(book => book.Title)
+    @Html.EditorFor(book => book.Title, new { htmlAttributes = new { @class = "form-control", placeholder = "Ingrese el titulo del libro" } });
+
+    <div class="container">Autores</div>
+    foreach (WrittenBy escritoPor in this.Model.WrittenBy)
+    {
+
+        <select name="autores" class="form-control">
+            @foreach (Autor autor in db.Autor.ToList())
+            {
+                <option @(escritoPor.Autor.Id.Equals(autor.Id) ? "selected" : "") value="@autor.Id">
+                    @autor.AuthorName
+                </option>
+            }
+        </select>
+
+    }
+        <button class="btn btn-primary form-control">Enviar</button>
+}
